@@ -110,7 +110,7 @@ header h1 {
   position: relative;
 }
 header h1::after {
-content: "";
+  content: "";
   position: absolute;
   bottom: 0;
   left: 50%; /* move the underline to the center */
@@ -149,6 +149,8 @@ header h3:hover #me {
   font-weight: bold;
   text-align: center;
   margin: 3rem 0;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
 }
 /* about */
 /* .about .empty-container {
@@ -187,14 +189,10 @@ header h3:hover #me {
   justify-content: center;
   border: solid 1px var(--black);
   border-radius: 30px;
-  background: linear-gradient(to top, var(--bg-green-d), var(--yellow));
   /* background-color: var(--bg-green-d); */
   overflow: hidden;
   max-width: 400px;
   max-height: 100%;
-  transition: background-position 0.5s;
-  background-size: 100% 10000%;
-  background-position: bottom;
   box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.706);
 }
 .about img {
@@ -218,7 +216,7 @@ header h3:hover #me {
   align-items: center;
   text-align: justify;
 }
-.about h6{
+.about h6 {
   font-family: var(--san-serif-1);
   font-size: 1.4rem;
   margin-left: 5px;
@@ -231,7 +229,7 @@ header h3:hover #me {
   font-size: 1.2rem;
   word-spacing: 5px;
   margin-bottom: 10px;
-  font-weight:lighter;
+  font-weight: lighter;
 }
 .about .info span {
   color: var(--yellow);
@@ -246,7 +244,7 @@ header h3:hover #me {
   padding: 0 10rem;
 }
 .about .our-team img {
-  width:200px ;
+  width: 200px;
   height: 200px;
 }
 .about .our-team h4 {
@@ -280,12 +278,6 @@ header h3:hover #me {
   background: linear-gradient(to top, var(--bg-green-l), rgb(0, 140, 255));
   /* background-color: var(--darkblue); */
   overflow: hidden;
-  transition: background-position 0.5s;
-  background-size: 100% 10000%;
-  background-position: bottom;
-}
-#ajaykumar:hover div {
-  background-position: top;
 }
 #ansh div {
   padding: 10px 5px 0px 5px;
@@ -294,12 +286,6 @@ header h3:hover #me {
   background: linear-gradient(to top, var(--bg-green-l), red);
   /* background-color: var(--darkblue); */
   overflow: hidden;
-  transition: background-position 0.5s;
-  background-size: 100% 10000%;
-  background-position: bottom;
-}
-#ansh:hover div {
-  background-position: top;
 }
 #kevin div {
   padding: 10px 5px 0px 5px;
@@ -308,15 +294,7 @@ header h3:hover #me {
   background: linear-gradient(to top, var(--bg-green-l), rgb(195, 0, 255));
   /* background-color: var(--darkblue); */
   overflow: hidden;
-  transition: background-position 0.5s;
-  background-size: 100% 10000%;
-  background-position: bottom;
 }
-#kevin:hover div {
-  background-position: top;
-}
-
-
 .about .skills .skill-container {
   padding-left: 15px;
   margin-left: 5px;
@@ -342,18 +320,90 @@ header h3:hover #me {
   background-color: var(--yellow);
 }
 
-
 /* projects */
 .projects {
-  padding: 2rem 8rem;
   display: flex;
   background-color: var(--bg-green-d);
   justify-content: center;
   align-items: center;
 }
+#intro {
+  background-color: var(--bg-green-d);
+}
+#method {
+  background-color: var(--bg-green-l);
+}
+#result {
+  background-color: var(--bg-green-d);
+}
+#components {
+  background-color: var(--bg-green-l);
+}
+#code {
+  background-color: var(--bg-green-d);
+}
+.projects-div {
+  padding: 1rem 8rem;
+
+}
+.projects-container ul {
+  text-align: justify;
+}
+.projects-container ul li {
+  margin-top: 1rem;
+}
+.projects-container h5 {
+  font-family: var(--serif);
+  font-size: 1.3rem;
+}
+.projects-container .col-4 {
+  padding: 10px 2rem;
+}
+.projects-container .col-4 .comp-div {
+  padding: 1rem;
+  border-radius: 20px;
+  background-color: var(--bg-green-d);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+  transition: transform 0.2s ease-in-out;
+}
+.projects-container .col-4 .comp-div:hover {
+  transform: scale(1.1);
+}
+.comp-info {
+  position: absolute;
+  text-align: justify;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* transform: translateY(100%); */
+  /* transition: transform 0.3s ease; */
+  padding: 10px 1rem;
+  padding-bottom: 5px;
+  background-color: rgba(0, 0, 0, 0.306);
+}
+.comp-div:hover .comp-info{
+  /* transform: translateY(0); */
+}
+.comp-info h6 {
+  font-family: var(--san-serif-2);
+  font-size: 1.2rem;
+  color: var(--bg-green-l);
+  font-weight: 600;
+}
+.comp-info p {
+  font-family: var(--san-serif-2);
+  font-size: 1rem;
+  font-weight: 400;
+}
 .projects img {
   max-width: 100%;
   border-radius: 10px;
+}
+#code img {
+  
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
 }
 .projects-div {
   width: 100%;
@@ -539,7 +589,7 @@ footer {
 #ajaykumar {
   color: var(--yellow) !important;
 }
-#credits   {
+#credits {
   position: fixed;
   bottom: 0;
   right: 10px;
@@ -563,8 +613,7 @@ footer {
   font-size: 1.2rem;
 }
 
-
-@media screen and (max-width:1000px) {
+@media screen and (max-width: 1000px) {
   #desktop {
     visibility: hidden;
     position: fixed;
