@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Smart Pot</title>
+
+    <!-- Prism -->
+    <link rel="stylesheet" href="static/prism.css" />
+    <script src="static/prism.js"></script>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <!-- CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Kalam:wght@400;700&family=Roboto+Slab&family=Tangerine:wght@700&family=Titillium+Web&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="static/css/style.css" />
+  </head>
+
+  <body
+    data-bs-spy="scroll"
+    data-bs-target="#navbar-example2"
+    data-bs-offset="0"
+    class="scrollspy-example"
+    tabindex="0"
+  >
+    <main id="desktop">
+      <!-- Header -->
+      <header>
+        <video src="static/bg-video.mp4" muted loop autoplay></video>
+        <div class="header-blur">
+          <div class="intro">
+            <h1 id="me">Smart Pot</h1>
+            <h3>a self sustainable plant pot</h3>
+          </div>
+        </div>
+      </header>
+      <!-- Navigation bar -->
+      <nav class="navbar navbar-expand-md navbar-dark sticky-top">
+        <div class="container-fluid">
+          <span class="navbar-brand">Smart Pot</span>
+          <span class="navbar-text"></span>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarText"
+            aria-controls="navbarText"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="#scrollspyHeading1"
+                  >About</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#scrollspyHeading2"
+                  data-bs-offset="20"
+                  >Code</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#scrollspyHeading3">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- About ME -->
+      <section id="scrollspyHeading1" class="about">
+        <!-- <div class="empty-container"></div> -->
+        <h3 class="section-title">~ ~ ~ ~ About ~ ~ ~ ~</h3>
+        <div class="about-div">
+          <div class="row">
+            <div class="col-lg-4 col-12">
+              <div class="img-border-div abs">
+                <img src="static/snakeplant.jpg" alt="" />
+              </div>
+              <div class="img-border-div invisible">
+                <img src="static/snakeplant.jpg" alt="" />
+              </div>
+            </div>
+            <div class="col-lg-8 col-12">
+              <div>
+                <h6>About Smart Pot:</h6>
+                <p class="info">
+                  <span>Smart Pot</span>, the self-watering pot that takes care
+                  of your plants for you. Our innovative technology measures the
+                  moisture level of the soil and automatically waters your
+                  plants as needed, ensuring that they always receive the right
+                  amount of water to stay healthy and thrive.
+                </p>
+                <h6>Our Mission:</h6>
+                <p class="info">
+                  We believe that plant care should be easy and accessible to
+                  everyone. Our mission is to create products that simplify
+                  plant care and promote a healthy lifestyle. We are committed
+                  to using innovative technology to help people enjoy the
+                  benefits of gardening without the hassle.
+                </p>
+                <h6 class="">Our Team:</h6>
+              </div>
+            </div>
+          </div>
+          <div class="our-team">
+            <div class="row">
+              <div class="col-4 the-team" id="ajaykumar">
+                <div>
+                  <img src="static/ajaykumar-transperent.png" alt="" />
+                </div>
+                <span>
+                  <h5>Ajaykumar Nadar</h5>
+                  <p>Web Developer</p>
+                </span>
+              </div>
+              <div class="col-4 the-team" id="ansh">
+                <div>
+                  <img src="static/ajaykumar-transperent.png" alt="" />
+                </div>
+                <span>
+                  <h5>Ansh Shetty</h5>
+                  <p>Mechanical Guy</p>
+                </span>
+              </div>
+              <div class="col-4 the-team" id="kevin">
+                <div>
+                  <img src="static/ajaykumar-transperent.png" alt="" />
+                </div>
+                <span>
+                  <h5>Kevin Nadar</h5>
+                  <p>IoT Engineer</p>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="scrollspyHeading2" class="projects">
+        <div class="projects-div">
+          <h3 class="section-title">~ ~ ~ ~ Code ~ ~ ~ ~</h3>
+          <div class="projects-container">
+            <img src="static/code2.png" alt="" srcset="" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="scrollspyHeading3" class="contact">
+        <div class="contact-div">
+          <h3 class="section-title">~ ~ ~ ~ Contact Us ~ ~ ~ ~</h3>
+          <div class="contact-container">
+            <form action="/" method="get" class="contact-form">
+              <div class="row justify-content-center">
+                <div class="col-md-6 col-12">
+                  <label for="name">Name</label>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Your Name"
+                    required
+                  />
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Your Email Address"
+                    required
+                  />
+                </div>
+                <div class="col-md-6 col-12">
+                  <label for="message">Message</label>
+                  <textarea
+                    name="message"
+                    id="message"
+                    cols="30"
+                    rows="4"
+                    placeholder="Your Message"
+                    required
+                  ></textarea>
+                </div>
+                <div class="col-6">
+                  <button id="submit" class="on" type="submit">SUBMIT!</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="social-links">
+          <a href="https://github.com/ajayKumarNadar/smart_pot" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href=""><i class="fa-brands fa-linkedin"></i></a>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <span id="copyright">
+          <p id="crs">©</p>
+          <p id="year"></p>
+          <p id="ajaykumar">Smart Pot.</p>
+          <p>All rights reserved.</p>
+        </span>
+      </footer>
+      <!-- FontAwsome -->
+      <script
+        src="https://kit.fontawesome.com/b1cb12db09.js"
+        crossorigin="anonymous"
+      ></script>
+      <!-- Bootstrap -->
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"
+      ></script>
+
+      <!-- JQuery -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+      <!-- Javascript -->
+      <script src="static/js/script.js"></script>
+      <script>
+        Prism.highlightAll();
+      </script>
+    </main>
+    <main id="mobile">
+      <i class="fa-solid fa-desktop fa-bounce"></i>
+      <h3>This Website is only visible on desktop</h3>
+    </main>
+  </body>
+</html>
