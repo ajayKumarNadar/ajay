@@ -380,10 +380,11 @@ header h3:hover #me {
 .comp-info {
   position: absolute;
   text-align: justify;
+  top:0;
   bottom: 0;
   left: 0;
   right: 0;
-  transform: translateY(84%);
+  transform: translateY(85%);
   transition: transform 0.3s ease;
   padding: 10px 1rem;
   padding-bottom: 5px;
