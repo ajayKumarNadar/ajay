@@ -248,6 +248,9 @@ header h3:hover #me {
   width: 200px;
   height: 200px;
 }
+.our-team .col-4 div{
+  transition:all 0.2s ease;
+}
 .about .our-team h4 {
   margin-bottom: 20px;
   font-weight: 600;
@@ -279,6 +282,9 @@ header h3:hover #me {
   background: linear-gradient(to top, var(--bg-green-l), rgb(0, 255, 179));
   /* background-color: var(--darkblue); */
   overflow: hidden;
+}
+.our-team .col-4:hover div {
+  transform: scale(1.05);
 }
 #ansh div {
   padding: 10px 5px 0px 5px;
